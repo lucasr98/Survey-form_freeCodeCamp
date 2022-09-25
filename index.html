@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulario</title>
+    <meta charset="utf-8"></meta>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,900;1,200;1,400;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1 id="title">
+      Formulario de Inscripción
+      </h1>
+      <p id="description">
+        Para poder inscribirte en nuestro curso de <a href="https://www.freecodecamp.org/learn/"><i>freeCodeCamp</i></a>, deberás llenar el siguiente formulario:
+      </p>
+      <form id="survey-form">
+        <label id="name-label" class="input"><h2>• Usuario:</h2>
+          <input id="name" type="text" placeholder="Nombre de usuario" required>
+        </label>
+        <label id="email-label" class="input"><h2>• Dirección de correo electrónico:</h2>
+          <input id="email" type="email" placeholder="E-mail" required>
+        </label>
+        <label class="input" id="number-label"><h2>• Fecha de nacimiento:</h2>
+          <input id="number" type="number" placeholder="Fecha de nacimiento (opcional)" min="1950" max="2022">
+        </label>
+        <label for="dropdown" class="dropdown-container"><h2>• Localidad de servidor</h2>
+          <select id="dropdown">
+            <option>América</option>
+            <option>África</option>
+            <option>Asia</option>
+            <option>Europa</option>
+            <option>Oceanía</option>
+        </select>
+        </label>
+        <div class="radio-button"><h2>• Sexo:</h2>
+          <label for="femenino">
+            <input name="sexo" id="femenino" type="radio" value="femenino">
+          Femenino</label>
+          <label for="masculino">
+            <input name="sexo" id="masculino" type="radio" value="masculino">
+          Masculino</label>
+        </div>
+        <div class="checkbox-button">
+          <label for="accept">
+            <input id="accept" type="checkbox" value="accept" required>
+          Acepto los términos y condiciones.</label>
+          <label for="subscribe">
+            <input id="subscribe" type="checkbox" value="subscribe">
+          Recibir notificaciones semanales de la página.</label>
+        </div>
+        <label for="comentario" class="comentario-container">
+          <h2>• Comentario o sugerencia (opcional)<h2>
+          <textarea id="comentario" placeholder="Mín. 50 caracteres/máx. 500 caracteres" ></textarea>
+        </label>
+        <input type="submit" id="submit" value="Enviar">
+      </form>
+    </div>
+  </body>
+</html>
